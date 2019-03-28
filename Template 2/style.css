@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    height: auto;
+    background-color: #eee;
+}
+/* header here */
+header{
+    color:white;
+    background-color: black;
+    width: 100%;
+}
+h1{
+    font-weight: 400;
+    font-size: 4rem;
+    margin:0 0 0 20px;
+    text-transform: uppercase
+}
+h3{
+    margin:0 0 5px 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    text-transform: capitalize;
+}
+/* navigation bar of header */
+.navbar{
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+.navbar img{
+    height:40px;
+}
+.navbar a{
+    text-decoration: none;
+    color: lightslategray;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    width: 18%;
+    min-width: 80px;
+}
+/* slideshow image */
+.slideshow img{
+    width:100%;
+}
+/* cards under the image */
+.card{
+    margin:8%;
+    box-shadow: 20px 0px 30px rgba(0, 0, 0, 0.1), -20px  0px 30px rgba(0, 0, 0, 0.1); 
+}
+.card img{
+    width: 40px;
+    border-radius: 50%;
+}
+.card h2{
+    display:inline-block;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+.card p{
+    padding:10px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+.card a{
+    color: green;
+    display: block;
+    margin: 10px;
+}
+/* lower part of main tag */
+.visitor-welcome {
+    margin: 5%;
+}
+.visitor-welcome h2, .testimonials h2{
+    font-weight:600;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.visitor-welcome img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonials{
+    margin: 5%;
+}
+.testimonials h5{
+    font-size: 1.5rem;
+    margin:0;
+}
+/* footer here */
+.common p{
+    margin-bottom:0;
+}
+.common {
+    background-color: black;
+    color:white;
+}
+.common a{
+    display: block;
+    margin-top:16px;
+    text-decoration: none;
+    color:white;
+}
+.newsletter input,.newsletter button{
+    margin : 15px;
+}
+
+@media (min-width:700px) {
+    /* cards under the image */
+    .steps{
+        display: flex;
+    }
+    .card{
+        margin:5%;
+    }
+    /* lower part of main tag */
+    .content{
+        display:flex;
+    }
+    .visitor-welcome{
+        flex: 3;
+        margin: 3%;
+    }
+    .visitor-welcome img{
+        float:left;
+        height: 150px;
+    }
+    .testimonials{
+        flex: 1;
+        margin: 3%;
+    }
+    /* footer here */
+    footer{
+        display:flex;
+    }
+    .common{
+        flex:1;
+        padding:10px;
+    }
+    .common h3{
+        font-size:1.5rem;
+    }
+    .common p,.common a{
+        margin-left:20px;
+    }
+}
+@media (min-width:1100px){
+    /* cards under the image */
+    .size{
+        display:flex;
+    }
+    .card h2{
+        font-size: 1.5rem;
+    }
+    .card{
+        margin:3%;
+    }
+    /* footer here */
+    .common h3{
+        font-size:2rem;
+    }
+}
